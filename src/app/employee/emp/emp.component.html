@@ -1,0 +1,17 @@
+<h2>{{headee ? headee: 'Table not Available'}}</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let e of emee">
+    <td>{{e.name  | uppercase}}</td>
+    <td>{{e.lname | uppercase}}</td>
+    <td>{{e.age}}</td>
+  </tr>
+  
+  
+</table>
+<button (click)="geeme()">REFRESH</button>
